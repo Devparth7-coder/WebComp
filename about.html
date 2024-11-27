@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Cultural Fest 2024</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Cultural Fest 2024</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header class="about-hero">
+        <h1>About Our Event</h1>
+    </header>
+    <section id="about">
+        <!-- Video Background -->
+        <video autoplay muted loop id="aboutVideo">
+            <source src="assets/videos/culture.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Content Over Video -->
+        <div class="about-content">
+            <h1>Welcome to Our Cultural Fest</h1>
+            <p>
+                Discover the magic of art, music, and traditions! Our annual cultural fest celebrates the essence of diversity with a variety of events, performances, and experiences designed to immerse you in culture and creativity.
+            </p>
+            <button><a href="events.html">Explore Events</a></button>
+        </div>
+    </section>
+
+    <!-- Music Player -->
+    <div id="music-player">
+        <audio controls>
+            <source src="assets/music/background.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <section class="timeline">
+        <h2>Event Highlights</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <h3>Music Night</h3>
+                <p>Groove to live performances by famous bands and artists.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Dance Extravaganza</h3>
+                <p>Showcase your talent in a thrilling dance competition.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Art Showcase</h3>
+                <p>Explore mesmerizing art installations by top creators.</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="assets/images/event1.jpg" alt="Event Image 1">
+            <img src="assets/images/event2.jpg" alt="Event Image 2">
+            <img src="assets/images/event3.jpg" alt="Event Image 3">
+            <img src="assets/images/event4.jpg" alt="Event Image 4">
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Cultural Fest. All rights reserved.
+    </footer>
+    <script>
+        // Smooth Scroll to Events Section
+        function scrollToEvents() {
+            window.location.href = "events.html";
+        }
+    </script>
+</body>
+
+</html>

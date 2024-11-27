@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Events</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="event.html" class="active">Events</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Explore Our Events</h1>
+        <p>Discover exciting cultural events and experiences awaiting you!</p>
+    </section>
+
+    <section class="events-container">
+        <div class="event-card" id="dance">
+            <img src="assets/images/event4.jpg" alt="Dance Event">
+            <h3>Dance Battle</h3>
+            <p>Show off your moves in a thrilling dance battle!</p>
+            <button>View Details</button>
+        </div>
+        <div class="event-card" id="music">
+            <img src="assets/images/event3.jpg" alt="Music Event">
+            <h3>Music Fiesta</h3>
+            <p>Join us for an evening of soul-stirring performances.</p>
+            <button>View Details</button>
+        </div>
+        <div class="event-card" id="art">
+            <img src="assets/images/dance.jpeg" alt="Art Exhibition">
+            <h3>Art Exhibition</h3>
+            <p>Experience breathtaking artworks by talented artists.</p>
+            <button>View Details</button>
+        </div>
+        <div class="event-card" id="fashion">
+            <img src="assets/images/dance.jpg" alt="Fashion Show">
+            <h3>Fashion Show</h3>
+            <p>Witness the glamour and creativity of our fashion show.</p>
+            <button>View Details</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Cultural Fest. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Event handlers for View Details buttons
+        const eventButtons = document.querySelectorAll(".event-card button");
+
+        eventButtons.forEach((button) => {
+            button.addEventListener("click", (e) => {
+                const eventId = e.target.parentElement.id;
+                alert(`You clicked on ${eventId.toUpperCase()} event details!`);
+                // You can expand this to open a modal, redirect, or display more details dynamically.
+            });
+        });
+    </script>
+</body>
+
+</html>
